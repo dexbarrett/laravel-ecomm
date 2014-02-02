@@ -1,0 +1,1386 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+p, h1, h2, h3, h4, h5, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================================================
+   Wrapper
+   ============================================================================ */
+
+#wrapper {
+    width: 1152px;
+    margin: 0 auto;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+/* ============================================================================
+   Header
+   ============================================================================ */
+
+header {
+    background-color: #fff;
+}
+
+header a:link, header a:visited {
+    color: #5daad0;
+    text-decoration: none;
+}
+
+/* ---- top-area ---- */
+
+#top-area {
+    height: 50px;
+    background-color: #f6f6f6;
+    padding: 0 30px;
+    line-height: 50px;
+}
+
+/* ---- action-bar --- */
+
+#action-bar {
+    height: 55px;
+    padding: 35px 0 0 30px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+}
+
+#action-bar a:link, #action-bar a:visited {
+    color: #000;
+}
+
+/* ---- action-bar (logo) ---- */
+
+#action-bar #logo-accent {
+    color: #5daad0;
+}
+
+#action-bar #logo {
+    float: left;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+/* --- action-bar (dropdown) ---- */
+
+#action-bar .dropdown {
+    float: left;
+    padding-right: 25px;
+    margin-right: 25px;
+    border-right: 1px dotted #aaa;
+}
+
+#action-bar .dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#action-bar .dropdown ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+#action-bar .dropdown ul li ul {
+    display: none;
+}
+
+#action-bar .dropdown ul li a {
+    display: block;
+    text-decoration: none;
+    color: #5daad0;
+    background-color: #fff;
+    margin-left: 1px;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+#action-bar .dropdown ul ul li a:link, #action-bar .dropdown ul ul li a:visited {
+    color: #000;
+}
+
+#action-bar .dropdown ul ul li a:hover {
+    color: #aaa;
+}
+
+#action-bar .dropdown li:hover ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    border: 1px solid #c3c3c3;
+    padding: 5px;
+    width: 160px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #fff;
+}
+
+#action-bar .dropdown li:hover li {
+    float: none;
+    background-color: #fff;
+}
+
+/* ---- product search-form ---- */
+
+#action-bar #search-form {
+    float: left;
+    padding-right: 25px;
+    margin-right: 10px;
+    border-right: 1px dotted #c3c3c3;
+}
+
+#action-bar #search-form .search {
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#action-bar #search-form .submit {
+    background-color: #f6f6f6;
+}
+
+/* ---- signin styles ---- */
+
+#action-bar #signin li:hover ul {
+    width: 115px;
+}
+
+/* --- view-cart --- */
+
+#action-bar #view-cart {
+    float: left;
+}
+
+#action-bar #view-cart a:link, #action-bar #view-cart a:visited {
+    color: #5daad0;
+}
+
+/* ============================================================================
+   Promo
+   ============================================================================ */
+
+#promo {
+    height: 400px;
+    padding: 0 30px;
+    background-color: #172832;
+}
+
+#promo-details {
+    float: left;
+}
+
+#promo img {
+    float: right;
+}
+
+#promo h1 {
+    color: #fff;
+    font-size: 34px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#promo p {
+    color: #5daad0;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+/* ============================================================================
+   Promo-alt
+   ============================================================================ */
+
+#promo-alt {
+    height: 400px;
+    padding: 0 0 0 30px;
+    background-color: #f6f6f6;
+}
+
+/* ---- promo1 ---- */
+
+#promo1 {
+    width: 65%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#promo1 h1 {
+    color: #2e373f;
+    font-size: 28px;
+    padding-top: 35px;
+    margin-bottom: 16px;
+}
+
+#promo1 p {
+    color: #9dbb6f;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#promo1 span.bold {
+    font-weight: bold;
+}
+
+#promo1 img {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+/* --- promo2 --- */
+
+#promo2 {
+    float: right;
+    text-align: left;
+    width: 34%;
+    position: relative;
+    height: 160px;
+    border-bottom: 1px dotted #000;
+    border-left: 1px dotted #000;
+}
+
+#promo2 h2 {
+    color: #2e373f;
+    font-size: 16px;
+    margin: 20px 0 30px 20px;
+}
+
+#promo2 a:link, #promo2 a:visited {
+    color: #5daad0;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#promo2 img {
+    position: absolute;
+    top: 19%;
+    left: 65%;
+}
+
+#promo2 a img {
+    position: inherit;
+}
+
+/* --- promo3 ---- */
+
+#promo3 {
+    float: right;
+    text-align: left;
+    position: relative;
+    width: 34%;
+    height: 240px;
+    background-color: #2e373f;
+}
+
+#promo3 img {
+    margin-top: 20px;
+}
+
+#promo3 a img {
+    margin-top: 0;
+}
+
+#promo3 h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    color: #fff;
+    font-size: 16px;
+}
+
+#promo3 a:link, #promo a:visited {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #5daad0;
+    text-decoration: none;
+}
+
+/* ============================================================================
+   search-keyword
+   ============================================================================ */
+
+#search-keyword {
+    padding: 30px 0 30px 30px;
+}
+
+#search-keyword h1 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#search-keyword h1 span {
+    font-weight: bold;
+}
+
+/* ============================================================================
+   main-content
+   ============================================================================ */
+
+#main-content {
+    padding: 20px 0 30px 30px;
+}
+
+#main-content h2, #main-content h3 {
+    color: #2e373f;
+    margin-bottom: 20px;
+}
+
+#main-content h3 {
+    margin-bottom: 5px;
+}
+
+#main-content h3 a:link, #main-content h3 a:visited {
+    color: #2e373f;
+    text-decoration: none;
+}
+
+#main-content h5 {
+    color: #5f5e5e;
+    margin-bottom: 20px;
+}
+
+#main-content p {
+    margin-bottom: 25px;
+}
+
+#main-content hr {
+    margin-bottom: 20px;
+}
+
+/* --- categories-menu & my-account-menu ---*/
+
+#categories-menu,
+#my-account-menu {
+    width: 180px;
+    border-right: 1px solid #aaa;
+    text-align: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+#categories-menu h3,
+#my-account-menu h3 {
+    color: #c3c3c3;
+}
+
+#categories-menu ul,
+#my-account-menu ul {
+    margin-left: 20px;
+    list-style-image: url(../img/right-arrow.gif);
+}
+
+#categories-menu a:link, #categories-menu a:visited,
+#my-account-menu a:link, #my-account-menu a:visited {
+    color: #2e373f;
+    text-decoration: none;
+}
+
+/* --- listings ---- */
+
+#listings {
+    text-align: left;
+    width: 920px;
+    float: right;
+}
+
+/* --- IE7 Margin Fix ---- */
+
+.lt-ie8 #listings {
+    margin-top: -110px;
+}
+
+/* --- search-results ---- */
+
+#search-results {
+    text-align: left;
+}
+
+/* ---- products ---- */
+
+#products {
+    text-align: center;
+}
+
+.product {
+    text-align: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 70px;
+    width: 200px;
+    vertical-align: top;
+}
+
+#listings .product {
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
+
+#search-results .product {
+    margin-bottom: 30px;
+}
+
+.instock {
+    color: #9dbb6f;
+}
+
+.outofstock {
+    color: red;
+}
+
+.product img.feature {
+    margin-bottom: 40px;
+}
+
+.product .wish a:link, .product .wish a:visited {
+    color: #5daad0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/*---- pagination ---- */
+
+#pagination {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 230px;
+}
+
+#pagination ul {
+    list-style: none;
+}
+
+#pagination li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#pagination a:link, #pagination a:visited {
+    color: #5daad0;
+    text-decoration: none;
+}
+
+/* ============================================================================
+   Product Page
+   ============================================================================ */
+
+#product-image, #product-details, #product-info {
+    float: left;
+    margin: 20px 0;
+}
+
+#product-image {
+    width: 45%;
+}
+
+#product-details {
+    width: 30%;
+}
+
+#product-details h1 {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+#product-details input {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 20px;
+}
+
+#product-details button {
+    margin-bottom: 10px;
+}
+
+#product-details a:link, #product-details a:visited {
+    color: #5daad0;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#product-info {
+    width: 20%;
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
+#product-info p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#product-info p.price {
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border: 1px solid #eee;
+}
+
+#product-info p span {
+    font-weight: normal;
+}
+
+/* ============================================================================
+   New Account & personal-details
+   ============================================================================ */
+
+#new-account {
+    width: 400px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #2e373f;
+}
+
+#new-account h1,
+#personal-details h1 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#new-account label,
+#personal-details label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#new-account p,
+#personal-details p {
+    font-size: 12px;
+}
+
+#new-account p input,
+#personal-details p input {
+    width: 300px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#new-account .required-field,
+#personal-details .required-field {
+    color: #5daad0;
+}
+
+/* ============================================================================
+   Signin
+   ============================================================================ */
+
+#signin-form, #signup {
+    text-align: center;
+    padding: 10px 0 30px 0;
+    color: #2e373f;
+    position: relative;
+}
+
+#main-content #signin-form {
+    left: -30px;
+    width: 1150px;
+}
+
+#signin-form {
+    background-color: #f6f6f6;
+}
+
+#signin-form h1, #signup h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#signin-form form img {
+    position: relative;
+    left: 25px;
+}
+
+#signin-form input {
+    width: 300px;
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #c3c3c3;
+}
+
+#signup h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+/* ============================================================================
+   Admin
+   ============================================================================ */
+
+#admin {
+    width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #2e373f;
+}
+
+#admin h1{
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+#admin label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#admin p {
+    font-size: 14px;
+}
+
+#admin p input {
+    width: 300px;
+}
+
+#admin p input, #admin p textarea {
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#admin .form-price {
+    width: 60px;
+}
+
+#admin .required-field {
+    color: #5daad0;
+}
+
+#admin ul {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#admin ul li {
+    margin-bottom: 10px;
+}
+
+/* ============================================================================
+    form-errors
+    =========================================================================== */
+
+#form-errors p {
+    color: #8A3324;
+    font-size: 16px;
+}
+
+#form-errors ul {
+    color: #666;
+    margin-left: 60px;
+    margin-bottom: 35px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ============================================================================
+    Other Form Styling
+    =========================================================================== */
+
+.form-inline {
+    display: inline;
+}
+
+.form-inline input[type=submit] {
+    border: none;
+    background-color: #fff;
+    color: #5daad0;
+}
+
+/* ============================================================================
+   contact-us
+   ============================================================================ */
+
+#contact-us {
+    width: 400px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #2e373f;
+}
+
+#contact-us h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#contact-us p span {
+    font-weight: bold;
+}
+
+#contact-us a:link, #contact-us a:visited {
+    color: #5daad0;
+    text-decoration: none;
+}
+
+.note {
+    font-size: 12px;
+}
+
+/* ============================================================================
+   order-details & order-history & personal-details & shopping-cart
+   ============================================================================ */
+
+#order-details,
+#order-history,
+#personal-details {
+    text-align: left;
+    width: 900px;
+    float: right;
+    margin-bottom: 60px;
+    padding-left: 20px;
+}
+
+#order-history {
+    margin-bottom: 0;
+}
+
+/* ---- IE7 Margin Fix ---- */
+.lt-ie8 #order-details,
+.lt-ie8 #order-history,
+.lt-ie8 #personal-details {
+    margin-top: -120px;
+}
+
+#order-details h1, #order-details h2,
+#order-history h1, #shopping-cart h1 {
+    color: #2e373f;
+    font-weight: normal;
+    margin-bottom: 20px;
+    width: 840px;
+}
+
+#order-details h1,
+#order-history h1,
+#shopping-cart h1 {
+    font-size: 24px;
+}
+
+#order-details h2 {
+    font-size: 16px;
+    background-color: #f6f6f6;
+    padding: 15px;
+}
+
+#order-details p {
+    color: #5f5e5e;
+    margin-left: 50px;
+}
+
+#order-details table,
+#order-history table,
+#shopping-cart table {
+    color: #5f5e5e;
+    width: 870px;
+    margin-bottom: 40px;
+}
+
+#shopping-cart table {
+    width: 1080px;
+}
+
+#order-details th,
+#order-history th,
+#shopping-cart th {
+    padding: 20px;
+}
+
+#order-details td,
+#order-history td,
+#shopping-cart td {
+    padding: 10px;
+}
+
+#shopping-cart .qty {
+    border: 1px solid #aaa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 20px;
+}
+
+#shopping-cart td span {
+    display: block;
+}
+
+#order-history a:link, #order-history a:visited {
+    color: #5daad0;
+    text-decoration: none;
+}
+
+.total {
+    text-align: right;
+}
+
+.total span {
+    font-weight: bold;
+}
+
+.finalized {
+    color: #9dbb6f;
+}
+
+.pending {
+    color: #ed7840;
+}
+
+.aborted {
+    color: #de310f;
+}
+
+/* ============================================================================
+   Footer
+   ============================================================================ */
+
+footer h4 {
+    color: #c3c3c3;
+    margin-bottom: 15px;
+}
+
+/* --- contact --- */
+
+footer #contact {
+    background-color: #faf9f9;
+    height: 167px;
+    text-align: center;
+}
+
+footer #contact h3 {
+    color: #2e373f;
+    padding-top: 50px;
+}
+
+footer #contact a:link, footer #contact a:visited {
+    color: #5daad0;
+    text-decoration: none;
+}
+
+/* --- links ---- */
+
+footer #links {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer #links a:link, footer #links a:visited {
+    color: #2e373f;
+    text-decoration: none;
+} 
+
+footer #links ul {
+    margin-left: 13px;
+    list-style-image: url(../img/right-arrow.gif);
+}
+
+footer #my-account, footer #info, footer #extras {
+    text-align: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+
+footer #my-account, footer #info {
+    margin-right: 130px;
+}
+
+/* --- copyright, connect, payments --- */
+
+footer #copyright, footer #connect, footer #payments {
+    float: left;
+}
+
+footer #copyright, footer #connect {
+    margin-right: 130px;
+}
+
+footer #copyright {
+    padding: 20px 30px;
+}
+
+footer #copyright #store-desc {
+    color: #5f5e5e;
+}
+
+footer #copyright #store-copy {
+    color: #c3c3c3;
+}
+
+footer #logo {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer #logo a:link, footer #logo a:visited {
+    color: #2e373f;
+    text-decoration: none;
+}
+
+footer #logo #logo-accent {
+    color: #9c9c9c;
+}
+
+footer #connect a:link, footer #connect a:visited {
+    color: #5daad0;
+    text-decoration: none;
+}
+
+footer #connect h4, footer #payments h4 {
+    margin-top: 25px;
+}
+
+footer #connect ul {
+    margin-left: 30px;
+}
+
+footer #connect ul li.twitter {
+    list-style-image: url(../img/twitter.gif);
+}
+
+footer #connect ul li.fb {
+    list-style-image: url(../img/fb.gif);
+}
+
+/* ============================================================================
+   Buttons
+   ============================================================================ */
+
+section#promo .default-btn, .default-btn {
+    background-color: #5daad0;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 5px 0px #467f9c;
+    text-decoration: none;
+}
+
+.secondary-btn {
+    background-color: #2e373f;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 5px 0px #22292f;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.tertiary-btn {
+    background-color: #f6f6f6;
+    color: #5f5e5e;
+    padding: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 5px 0px #b8b8b8;
+    text-decoration: none;
+}
+
+/* IE7 Padding Fix */
+.lt-ie8 .default-btn, .lt-ie8 .secondary-btn,
+.lt-ie8 .tertiary-btn {
+    display: inline-block;
+}
+
+/* IE7&8 Tertiary-btn Fix */
+.lt-ie9 .tertiary-btn {
+    position: relative;
+    top: 10px;
+}
+
+.cart-btn {
+    padding: 10px 10px 10px 0;
+    background-color: #5daad0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/* IE7 Button Padding Fix */
+.lt-ie8 .cart-btn {
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.cart-btn .price {
+    background-color: #2e373f;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+
+.cart-btn:link, .cart-btn:visited, button.cart-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+button.cart-btn {
+    border: none;
+}
+
+.secondary-cart-btn {
+    background-color: #5daad0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 5px 0px #467f9c;
+    border: none;
+}
+
+/* ==========================================================================
+   Misc.
+   ========================================================================== */
+
+.alert {
+    background-color: #faf9f9;
+    color: #5daad0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 1050px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
