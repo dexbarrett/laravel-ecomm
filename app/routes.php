@@ -18,3 +18,7 @@ Route::controller('admin/categories', 'CategoriesController');
 Route::controller('admin/products', 'ProductsController');
 Route::controller('store', 'StoreController');
 Route::controller('users', 'UsersController');
+
+Route::get('test', function(){
+    dd(User::find(2)->isAdmin());
+});
