@@ -52,8 +52,8 @@
                             </tr>
                         </table>
                     </form>
-                @else
-                <h3 class="text-center">Your shopping cart is empty. Why don't you go and get some goodies?</h3>
-                @endif
-                </div><!-- end shopping-cart -->
+        @else
+            <h3 class="text-center">Your shopping cart is empty. Why don't you go and get some goodies?</h3>
+        @endif
+    </div><!-- end shopping-cart -->
 @stop

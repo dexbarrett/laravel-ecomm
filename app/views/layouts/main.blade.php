@@ -130,7 +130,7 @@
                         <h4>EXTRAS</h4>
                         <ul>
                             <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li>{{ HTML::link('/store/contact', 'Contact Us') }}</li>
                         </ul>
                     </div><!-- end extras -->
                 </section><!-- end links -->
