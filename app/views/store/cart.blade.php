@@ -2,6 +2,7 @@
 
 @section('content')
     <div id="shopping-cart">
+        @if($products)
                     <h1>Shopping Cart & Checkout</h1>
 
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -51,5 +52,8 @@
                             </tr>
                         </table>
                     </form>
+                @else
+                <h3 class="text-center">Your shopping cart is empty. Why don't you go and get some goodies?</h3>
+                @endif
                 </div><!-- end shopping-cart -->
 @stop
