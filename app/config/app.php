@@ -107,10 +107,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider'
-
-
-
+		'Way\Generators\GeneratorsServiceProvider',
+		'Moltin\Cart\CartServiceProvider'
 	),
 
 	/*
@@ -176,8 +174,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Image'           => 'Intervention\Image\Facades\Image'
-
+		'Image'           => 'Intervention\Image\Facades\Image',
+		'Cart'            => 'Moltin\Cart\Facade'
 	),
 
 );

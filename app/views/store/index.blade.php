@@ -31,11 +31,7 @@
                             {{ $product->getInStock() }}</span></h5>
 
                         <p>
-                            <a href="#" class="cart-btn">
-                                <span class="price">{{ $product->price }}</span>
-                                 {{ HTML::image('img/white-cart.gif', 'Add to Cart') }}
-                                  ADD TO CART
-                            </a>
+                            @include('store.partials.addtocart')
                         </p>
                     </div>
                     @endforeach

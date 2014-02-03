@@ -6,7 +6,8 @@
 	"require": {
 		"laravel/framework": "4.1.*",
 		"intervention/image": "dev-master",
-		"way/generators": "dev-master"
+		"way/generators": "dev-master",
+		"moltin/laravel-cart": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -34,5 +35,5 @@
 	"config": {
 		"preferred-install": "dist"
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "dev"
 }
